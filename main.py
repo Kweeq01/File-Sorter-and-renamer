@@ -4,10 +4,10 @@ from datetime import datetime
 import shutil
 from collections import defaultdict
 
-path_name = input(r'Введите путь к папке для сортировки: ')
+path_name = input(r'Enter the path to the folder to sort: ')
 
 if os.path.exists(path_name):  
-    print(f"Папка {path_name} существует. \n")
+    print(f"Folder {path_name} exists. \n")
 
     folders = {
         '.jpg': 'Images',
@@ -46,4 +46,4 @@ if os.path.exists(path_name):
                 print(f"{file_path} → {dest_path}")
     
 else:  
-    print(f"Папка {path_name} не существует.")
+    print(f"Folder {path_name} does not exist.")
